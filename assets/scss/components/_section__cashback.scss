@@ -1,0 +1,18 @@
+.section__cashback__button {
+    width: 100%;
+    background: white;
+
+    padding: 14px 0 ;
+    
+    border: 1px solid #AAAAAA;
+    border-radius: 30px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $textColor;
+    & :hover {
+        background-color: $hoverColor;
+        transition: 250ms;
+    } 
+}

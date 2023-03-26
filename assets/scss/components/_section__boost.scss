@@ -1,0 +1,13 @@
+.section__title{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    color: #000000;
+}
+
+.section__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0 30px;
+}

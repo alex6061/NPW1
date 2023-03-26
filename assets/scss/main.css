@@ -1,0 +1,275 @@
+@charset "UTF-8";
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: sans-serif, Arial, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.section {
+  padding: 30px 0 30px;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.hamburger {
+  width: 30px;
+  height: 20px;
+  background: #fff;
+  border: none;
+  padding: 2px;
+}
+
+.btn__hamb {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: black;
+  cursor: pointer;
+}
+.btn__hamb div {
+  width: 100%;
+  height: 100%;
+}
+.btn__hamb:before, .btn__hamb:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: black;
+}
+.btn__hamb:before {
+  top: -8px;
+}
+.btn__hamb:after {
+  top: 8px;
+}
+
+.header {
+  border-bottom: 1px solid #6c6c6c;
+  padding: 10px 0;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  margin-bottom: 10px;
+}
+
+.hero__text {
+  display: flex;
+  flex-wrap: wrap;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 20px;
+}
+
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.hero__link {
+  cursor: pointer;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+  color: #000000;
+}
+
+.section__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0 30px;
+}
+
+.section__cashback__button {
+  width: 100%;
+  background: white;
+  padding: 14px 0;
+  border: 1px solid #AAAAAA;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.section__cashback__button :hover {
+  background-color: #AAAAAA;
+  transition: 250ms;
+}
+
+.section__clients__image {
+  margin: 0 auto;
+}
+
+.footer {
+  background: #464b4f;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.footer__card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer__card__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__card__title,
+.footer__card__list__item,
+.footer__block__text {
+  color: white;
+}
+
+.footer__card__title {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.footer__card__list__item {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer__block {
+  padding-top: 30px;
+}
+
+.footer__white__logo {
+  width: 53px;
+  height: 23px;
+}
+
+.footer__block__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer__block__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.footer__logo {
+  display: block;
+  margin: 0 auto;
+  padding-top: 10px;
+  width: 130px;
+  height: 46px;
+}
+
+.footer__in {
+  width: 40px;
+  height: 40px;
+}/*# sourceMappingURL=main.css.map */
