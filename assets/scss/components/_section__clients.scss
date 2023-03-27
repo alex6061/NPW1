@@ -1,3 +1,9 @@
 .section__clients__image {
+    width: 130px;
     margin: 0 auto;
+}
+
+.section__clients__wrapper {
+    display: flex;
+    flex-wrap: wrap;
 }

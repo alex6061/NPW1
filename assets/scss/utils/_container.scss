@@ -1,5 +1,65 @@
 .container {
     margin: 0 auto;
     padding: 0  15px ;
+    @media (min-device-width: 569px) and (max-device-width:1025px) {
+        padding: 0 20px;
+    }
+
 }
 
+.cashbask__container {
+    margin: 0 auto;
+    padding: 0  15px ;
+    @media (min-device-width: 569px) and (max-device-width:1025px) {
+        width: 460px;
+    }
+
+}
+
+
+.section__title{
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 35px;
+    color: #000000;
+
+}
+
+
+.section__wrapper {
+    @media (min-device-width: 569px) and (max-device-width:1025px) {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}
+
+
+.section__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 0 30px;
+    @media (min-device-width: 569px) and (max-device-width:1025px) {
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+
+//SMall
+@media (min-device-width: 320px) and (max-device-width: 568px) {}
+//MeDium
+@media (min-device-width: 569px) and (max-device-width:1025px) {}
+//LarGe
+@media (min-device-width: 1025px) and (max-device-width: 1199px) {}
+//ExtraLarge
+@media (min-device-width: 1200px) {}
+
+
+
+// For Mobile Devices – 320px — 480px
+// iPads and Tablets – 481px — 768px
+// Laptops and small screen – 769px — 1024px
+// Large screens and Desktops – 1025px — 1200px
+// TV and Extra Large Screens – 1201px and more

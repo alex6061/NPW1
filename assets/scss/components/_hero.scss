@@ -1,3 +1,13 @@
+.hero__wrapper {
+    @media (min-device-width: 569px) and (max-device-width:1025px) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: start;
+    }
+}
+
 .hero__title {
     font-weight: 700;
     font-size: 30px;
@@ -14,13 +24,28 @@
     margin-bottom: 20px;
 }
 
-.hero__wrapper {
+.hero__links {
     display: flex;
     flex-direction: column;
     gap: 15px;
     margin-bottom: 30px;
+
+    @media (min-device-width: 569px) and (max-device-width:1025px) {
+        flex-direction: row;
+    }
+
 }
 
 .hero__link {
-cursor: pointer;
+    cursor: pointer;
+}
+
+.hero__img {
+    display: block;
+    margin: 0 auto;
+
+    @media (min-device-width: 569px) and (max-device-width:1025px) {
+        width: 330px  !important;
+    }
+
 }

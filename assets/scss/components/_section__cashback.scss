@@ -1,8 +1,33 @@
+.section__cashback__title {
+    margin-bottom: 10px;
+    @media (min-device-width: 569px) and (max-device-width:1025px) {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+.section__cashback__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @media (min-device-width: 569px) and (max-device-width:1025px) {
+        margin-bottom: 20px;
+
+    }
+
+}
+
+.section__cashback__text {
+    text-align: center;
+}
+
 .section__cashback__button {
-    width: 100%;
+    display: block;
+    padding: 14px 71px;
     background: white;
 
-    padding: 14px 0 ;
+    margin: 0 auto;
+
     
     border: 1px solid #AAAAAA;
     border-radius: 30px;
@@ -15,4 +40,8 @@
         background-color: $hoverColor;
         transition: 250ms;
     } 
+    @media (min-device-width: 569px) and (max-device-width:1025px) {
+        padding: 15px 40px;
+
+    }
 }

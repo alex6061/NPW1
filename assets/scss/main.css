@@ -80,6 +80,8 @@ select {
 }
 body {
   font-family: sans-serif, Arial, sans-serif;
+  font-weight: 400;
+  font-weight: 700;
 }
 
 button {
@@ -90,9 +92,58 @@ button {
   padding: 30px 0 30px;
 }
 
+.section__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
+}
+@media (min-device-width: 569px) and (max-device-width: 1025px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+.cashbask__container {
+  margin: 0 auto;
+  padding: 0 15px;
+}
+@media (min-device-width: 569px) and (max-device-width: 1025px) {
+  .cashbask__container {
+    width: 460px;
+  }
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 35px;
+  color: #000000;
+}
+
+@media (min-device-width: 569px) and (max-device-width: 1025px) {
+  .section__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+
+.section__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px 0 30px;
+}
+@media (min-device-width: 569px) and (max-device-width: 1025px) {
+  .section__inner {
+    margin: 0 auto;
+    width: 50%;
+  }
 }
 
 .hamburger {
@@ -140,6 +191,16 @@ button {
   justify-content: space-between;
 }
 
+@media (min-device-width: 569px) and (max-device-width: 1025px) {
+  .hero__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: start;
+  }
+}
+
 .hero__title {
   font-weight: 700;
   font-size: 30px;
@@ -156,35 +217,68 @@ button {
   margin-bottom: 20px;
 }
 
-.hero__wrapper {
+.hero__links {
   display: flex;
   flex-direction: column;
   gap: 15px;
   margin-bottom: 30px;
+}
+@media (min-device-width: 569px) and (max-device-width: 1025px) {
+  .hero__links {
+    flex-direction: row;
+  }
 }
 
 .hero__link {
   cursor: pointer;
 }
 
-.section__title {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 35px;
-  color: #000000;
+.hero__img {
+  display: block;
+  margin: 0 auto;
+}
+@media (min-device-width: 569px) and (max-device-width: 1025px) {
+  .hero__img {
+    width: 330px !important;
+  }
 }
 
-.section__wrapper {
+@media (min-device-width: 569px) and (max-device-width: 1025px) {
+  .section__boost__wrapper {
+    flex-direction: row-reverse;
+  }
+}
+
+.section__cashback__title {
+  margin-bottom: 10px;
+}
+@media (min-device-width: 569px) and (max-device-width: 1025px) {
+  .section__cashback__title {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.section__cashback__wrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 20px 0 30px;
+}
+@media (min-device-width: 569px) and (max-device-width: 1025px) {
+  .section__cashback__wrapper {
+    margin-bottom: 20px;
+  }
+}
+
+.section__cashback__text {
+  text-align: center;
 }
 
 .section__cashback__button {
-  width: 100%;
+  display: block;
+  padding: 14px 71px;
   background: white;
-  padding: 14px 0;
+  margin: 0 auto;
   border: 1px solid #AAAAAA;
   border-radius: 30px;
   font-weight: 400;
@@ -195,6 +289,11 @@ button {
 .section__cashback__button :hover {
   background-color: #AAAAAA;
   transition: 250ms;
+}
+@media (min-device-width: 569px) and (max-device-width: 1025px) {
+  .section__cashback__button {
+    padding: 15px 40px;
+  }
 }
 
 .section__clients__image {
@@ -207,7 +306,6 @@ button {
 
 .footer__wrapper {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
 }
