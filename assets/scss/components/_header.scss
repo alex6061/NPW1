@@ -7,3 +7,67 @@
     display: flex;
     justify-content: space-between;
 }
+
+.header__menu {
+    @media screen and  (max-width:1024px){
+        display: none;
+    }
+    display: flex;
+    gap: 40px;
+    align-self: baseline;
+}
+
+.header__menu__link {
+    color: #000000;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+
+    transition: 250ms;
+    scroll-behavior: smooth;
+
+
+    & :active {
+        transition: 250ms;
+    }
+}
+
+.header__menu__link,:active  {
+    transition: 250ms;
+    scroll-behavior: smooth;
+}
+
+.header__wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;    
+
+}
+
+.header__nav {
+    display: flex;
+    gap: 20px;
+}
+
+.header__lang {
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+}
+
+.arrow__down {
+    width: 9px;
+    height: 6px;
+}
+
+
+.header__svg__light {
+    width: 26px;
+    height: 26px;
+}

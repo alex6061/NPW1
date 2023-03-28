@@ -24,23 +24,45 @@
                         <use href="./assets/img/symbol-defs.svg#icon-logo"></use>
                     </svg>
                 </a>
-                <!-- ===header__nav=== -->
-                <nav>
+                <ul class="header__menu">
+                    <li class="header__menu__item"><a href="#hero" class="header__menu__link">Download</a></li>
+                    <li class="header__menu__item"><a href="#warranty" class="header__menu__link">Warranty</a></li>
+                    <li class="header__menu__item"><a href="#zen" class="header__menu__link">Care</a></li>
+                    <li class="header__menu__item"><a href="#cashback" class="header__menu__link">Cashback</a></li>
+                    <li class="header__menu__item"><a href="#clients" class="header__menu__link">Clients</a></li>
+                </ul> 
+                <div class="header__wrapper">
+                   <!-- ===header__nav=== -->  
+                    <nav class="header__nav">
+                        <button class="header__lang">
+                            <span class="part1">EN</span>
+                            <span class="part1">
+                                <svg class="arrow__down">
+                                    <use href="./assets/img/symbol-defs.svg#icon-arrow-down"></use>
+                                </svg>
+                            </span>
+                        </button>
+
+                        <svg class="header__svg__light">
+                            <use href="./assets/img/symbol-defs.svg#icon-moon" width="26px"></use> 
+                        </svg>
+
+                    </nav>
 
                     <button class="hamburger" id="mobile-menu-btn">
                         <div class="btn__hamb">
                             <div></div>
                         </div>
-                    </button>
-                    
-    
-                </nav>
-            </div>
+                    </button>   
+                </div>
+                
+            </div>               
+
         </div> 
     </header>
 
     <!-- =======section__hero===== -->
-    <section class="section hero ">
+    <section class="hero " id="hero">
         <div class="container">
                     <!-- ==========hero__title======= -->
              <div class="hero__wrapper section__wrapper">
@@ -68,26 +90,29 @@
     </section>
 
     <!-- =======section__boost===== -->
-    <section class="section__boost section">
+    <section class="section__boost section" id="warranty">
         <div class="container">
             <!-- ===wrapper=== -->
             <div class="section__boost__wrapper section__wrapper">
-                <!-- ===inner== -->
-                <div class="section__boost__inner section__inner">
-                    <h2 class="section__boost__title section__title">1-year warranty boost</h2>
-                    <p class="section__boost__text section__text">ZEN cards have a very neat feature that will help you whenever your electronic devices start failing after the standard warranty ends, which is pretty common.</p>
-                    <p class="section__boost__text section__text">When you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.</p>
-                </div>
-                <!-- ==inner== -->
-                <div class="section__boost__inner section__inner">
-                    <img src="assets/img/section__boost__img.jpg" alt="" class="section__boost__image hero__img" width="290">
+                    <!-- ===inner== -->
+                    <div class="section__box">
+                        <div class="section__boost__inner ">
+                            <h2 class="section__boost__title section__title">1-year warranty boost</h2>
+                            <p class="section__boost__text section__text">ZEN cards have a very neat feature that will help you whenever your electronic devices start failing after the standard warranty ends, which is pretty common.</p>
+                            <p class="section__boost__text section__text">When you buy any electronics with your ZEN shopping Mastercard, their warranty gets extended by one year. How does it work? It simply does. Automatically.</p>
+                        </div>
+                    </div>
+                    <!-- ==inner== -->
+                    <div class="section__boost__inner  section__boost__inner">
+                        <img src="assets/img/section__boost__img.jpg" alt="" class="section__boost__image hero__img" width="290">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- =====section__zen==== -->
-    <section class="section__zen section">
+    <section class="section__zen section" id="zen">
         <div class="container">
             <!-- ==wrapper== -->
             <div class="section__zen__wrapper section__wrapper">
@@ -107,7 +132,7 @@
     </section>
 
     <!-- =======section__cashback===== -->
-    <section class="section__cashback  section">
+    <section class="section__cashback  section" id="cashback">
         <div class="container cashbask__container">
             <h2 class="section__cashback__title section__title">and cashback!</h2>
             <div class="section__cashback__wrapper ">
@@ -120,7 +145,7 @@
     </section>
 
     <!-- =====section__clients==== -->
-    <section class="section__clients section">
+    <section class="section__clients section" id="clients">
         <div class="container">
                 <div class="section__clients__wrapper">
                     <img src="./assets/img/brands/brand1.png" alt="Rosegal" class="section__clients__image">
@@ -193,26 +218,31 @@
             </div>
             <div class="footer__block">
                 <svg class="footer__white__logo">
-                    <use href="./assets/img/symbol-defs.svg#icon-Vector-2" width="52px" height="23px"></use>
+                    <use href="./assets/img/symbol-defs.svg#icon-logo-1-1ёё" width="52px" height="23px"></use>
                 </svg>
                 <h3 class="footer__block__title">
                    
                 </h3>
 
                 <div class="footer__block__wrapper">
-                    <p class="footer__block__text">ZEN is a licensed financial institution under the supervision of the Central Bank of Lithuania approved by European Banking Authority for 31 countries.</p>
-                    <p class="footer__block__text">Registration number of the company 304749651, VAT ID LT100011714916.</p>
-                    <p class="footer__block__text">License of electronic money institutions number LB000457.</p>
-                    <p class="footer__block__text">Share capital 2.185.000,00 EUR.</p>
-                    <p class="footer__block__text">Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.</p>
-                    <p class="footer__block__text">Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.</p>
+                    <div class="footer__block__body">
+                        <p class="footer__block__text">ZEN is a licensed financial institution under the supervision of the Central Bank of Lithuania approved by European Banking Authority for 31 countries.</p>
+                        <p class="footer__block__text">Registration number of the company 304749651, VAT ID LT100011714916.</p>
+                        <p class="footer__block__text">License of electronic money institutions number LB000457.</p>
+                        <p class="footer__block__text">Share capital 2.185.000,00 EUR.</p>
+                        <p class="footer__block__text">Company address: Mėsinių g. 5, LT-01133, Vilnius, Lithuania.</p>
+                        <p class="footer__block__text">Sales Office: ul. Emilii Plater 53, 00-113 Warsaw, Poland.</p>
+                    </div>
+                    <div class="footer__block__inner">
+                        <svg class="footer__logo">
+                            <use href="./assets/img/symbol-defs.svg#icon-footer-logo" ></use>
+                        </svg>
+                    </div>
                 </div>
             </div>
 
             <!-- ====footer__logo=== -->
-            <svg class="footer__logo">
-                <use href="./assets/img/symbol-defs.svg#icon-footer-logo" ></use>
-            </svg>
+           
     
         </div>  
     </footer>

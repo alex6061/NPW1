@@ -1,4 +1,7 @@
 .hamburger{
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
     width: 30px;
     height: 20px;
     background: #fff;

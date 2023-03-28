@@ -79,10 +79,17 @@ select {
 
 // ====ручные изменения===
 
+a {
+  text-decoration: none;
+}
+
 body {
+    font-family: Nunito, Arial, sans-serif;
     font-family: sans-serif,Arial,sans-serif;
     font-weight: 400;
     font-weight: 700;
+    scroll-behavior: smooth;
+
 }
 
 button {
@@ -98,4 +105,14 @@ button {
   font-size: 14px;
   line-height: 150%;
 }
+
+
+// .section__wrapper {
+//   @media (min-device-width: 569px) and (max-device-width:1025px) {
+//       display: flex;
+//       justify-content: space-between;
+//       gap: 30px;
+//   }
+// }
+
 
